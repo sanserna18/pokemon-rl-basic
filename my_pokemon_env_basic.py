@@ -69,11 +69,11 @@ class MyPokemonEnv(gym.Env):
         print(f"Reward configuration: {self.reward_config}")
 
         # Several sets for observations
-        self.last_pos = [38, 3, 6]
-        self.second_last_pos = [38, 3, 6]
+        self.last_pos = (40, 5, 3)
+        self.second_last_pos = (40, 5, 3)
         self.last_reward = 0.0
         self.new_map_found = False
-        self.first_position_in_a_new_map = set([(38,4,6)])
+        self.first_position_in_a_new_map = set([(40,5,3)])
         self.overall_high_reward_tiles_per_map = set()
 
         self.session_high_reward_tiles_per_map = set()
@@ -215,7 +215,7 @@ class MyPokemonEnv(gym.Env):
         self.last_observation = obs
 
         self.session_new_map_found = False
-        self.session_first_position_in_a_new_map = set([(38,4,6)])
+        self.session_first_position_in_a_new_map = set([(40,5,3)])
         self.session_party_number = 0
         self.session_high_reward_tiles_per_map = set()
         self.session_reward = 0.0

@@ -29,7 +29,7 @@ def parse_args():
     return parser.parse_args()
 
 def load_reward_config(reward_version):
-    with open('/Users/jorgesanchez/Documents/AprendizajePKM/AprendizajePKM/ash_folder/basic/reward_configs.json', 'r') as f:
+    with open('/Users/jorgesanchez/Documents/Cositas/pokemon_basic_project/reward_configs.json', 'r') as f:
         
         reward_configs = json.load(f)
 
@@ -46,8 +46,8 @@ def main():
     config = {
         'headless': False,  # Run without GUI for speed
         'debug': True,    # This ensures window="null" is used (not self.debug = False, so window="null")
-        'init_state': "/Users/jorgesanchez/Documents/AprendizajePKM/AprendizajePKM/PokemonRedExperiments/init.state",
-        'gb_path': "/Users/jorgesanchez/Documents/AprendizajePKM/AprendizajePKM/PokemonRedExperiments/PokemonRed.gb",
+        'init_state': "init.state",
+        'gb_path': "/Users/jorgesanchez/Documents/Cositas/pokemon_basic_project/PokemonRed.gb",
         'reward_version': load_reward_config(args.reward_version)
     }
     
