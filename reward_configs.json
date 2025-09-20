@@ -1,0 +1,115 @@
+{
+  "versions": {
+    "v0_no_rewards": {
+      "description": "No rewards",
+      "rewards": {
+        "map_new": 0.0,
+        "tile_new": 0.0,
+        "movement": 0.0,
+        "new_pokemon_in_party": 0.0,
+        "exit_progress": 0.0,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": 0.0,
+        "penalty_revisit_map": 0.0,
+        "penalty_same_position": 0.0
+      }
+    },
+    "v1_basic": {
+      "description": "Basic rewards",
+      "rewards": {
+        "map_new": 3.0,
+        "tile_new": 0.0,
+        "movement": 0.0,
+        "new_pokemon_in_party": 10.0,
+        "exit_progress": 0.0,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": 0.0,
+        "penalty_revisit_map": 0.0,
+        "penalty_same_position": -0.01
+      }
+    },
+    "v2_basic": {
+      "description": "Basic more rewards for map new and hard penalty for revisit map",
+      "rewards": {
+        "map_new": 3.0,
+        "tile_new": 0.0,
+        "movement": 0.0,
+        "new_pokemon_in_party": 10.0,
+        "exit_progress": 0.0,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": 0.0,
+        "penalty_revisit_map": 0.0,
+        "penalty_same_position": 0.0
+      }
+    },
+    "v3_conservative": {
+      "description": "Conservative approach with small rewards and minimal penalties",
+      "rewards": {
+        "map_new": 5.0,
+        "tile_new": 0.0,
+        "movement": 0.001,
+        "exit_progress": 0.0,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": 0.0,
+        "penalty_revisit": 0.0
+      }
+    },
+    "v4_aggressive": {
+      "description": "Aggressive exploration with high rewards and strong penalties",
+      "rewards": {
+        "map_new": 5.0,
+        "tile_new": 0.1,
+        "movement": 0.0,
+        "exit_progress": 0.0,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": -0.05,
+        "penalty_revisit": 0.0
+      }
+    },
+    "v5_balanced": {
+      "description": "Balanced approach with moderate rewards and penalties",
+      "rewards": {
+        "map_new": 7.0,
+        "tile_new": 0.15,
+        "movement": 0.0005,
+        "exit_progress": 0.0015,
+        "exploration_bonus": 0.005,
+        "survival": 0.0005,
+        "penalty_stuck": -0.015,
+        "penalty_revisit": -0.008
+      }
+    },
+    "v6_exit_focused": {
+      "description": "Focus on finding and moving toward exits",
+      "rewards": {
+        "map_new": 5.0,
+        "tile_new": 0.1,
+        "movement": 0.0,
+        "exit_progress": 0.01,
+        "exploration_bonus": 0.0,
+        "survival": 0.0,
+        "penalty_stuck": -0.01,
+        "penalty_revisit": -0.005
+      }
+    },
+    "v7_survival_focused": {
+      "description": "Focus on survival and steady progress",
+      "rewards": {
+        "map_new": 5.0,
+        "tile_new": 0.1,
+        "movement": 0.001,
+        "exit_progress": 0.001,
+        "exploration_bonus": 0.0,
+        "survival": 0.01,
+        "penalty_stuck": -0.005,
+        "penalty_revisit": -0.002
+      }
+    }
+  },
+  "default_version": "v1_basic"
+} 
