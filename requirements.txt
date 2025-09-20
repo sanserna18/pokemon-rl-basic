@@ -1,0 +1,16 @@
+# Core ML/RL dependencies
+stable-baselines3>=2.0.0
+gymnasium>=0.29.0
+numpy>=1.21.0
+
+# Game emulation
+pyboy>=2.0.0
+
+# Standard library dependencies (included with Python)
+# csv - built-in
+# json - built-in
+# os - built-in
+# sys - built-in
+# random - built-in
+# time - built-in
+# argparse - built-in
